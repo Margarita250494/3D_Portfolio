@@ -58,7 +58,7 @@ export const Form = () => {
           className="input"
         />
         {state.errors.name && (
-          <p id="name-error" className="text-red-500 text-sm py-3 px-8">
+          <p id="name-error" className="error">
             {state.errors.name}
           </p>
         )}
@@ -80,7 +80,7 @@ export const Form = () => {
           className="input"
         />
         {state.errors.email && (
-          <p id="email-error" className="text-red-500 text-sm py-3 px-8">
+          <p id="email-error" className="error">
             {state.errors.email}
           </p>
         )}
@@ -102,7 +102,7 @@ export const Form = () => {
           required
         />
         {state.errors.message && (
-          <p id="message-error" className="text-red-500 text-sm py-3 px-8">
+          <p id="message-error" className="error">
             {state.errors.message}
           </p>
         )}

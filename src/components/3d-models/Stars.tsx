@@ -34,7 +34,7 @@ const Stars = (props: StarsProps) => {
 
 export const StarsCanvas = () => {
   return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
+    <div className="contact__stars">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />

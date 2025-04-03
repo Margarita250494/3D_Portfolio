@@ -16,7 +16,7 @@ export const ContactForm = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[34.375rem] h-[21.875rem]"
+        className="contact__form-graphic"
       >
         <EarthCanvas />
       </motion.div>

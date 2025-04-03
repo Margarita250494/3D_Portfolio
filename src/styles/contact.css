@@ -31,7 +31,19 @@
                 .button-submit{
                     @apply bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl border-white border-1 hover:bg-secondary hover:text-tertiary duration-400 cursor-pointer;
                 }
+
+                .error{
+                    @apply text-red-500 text-sm py-3 px-8;
+                }
             }
         }
+
+        .contact__form-graphic{
+            @apply xl:flex-1 xl:h-auto md:h-[34.375rem] h-[21.875rem];
+        }
+    }
+
+    .contact__stars{
+        @apply w-full h-auto absolute inset-0 z-[-1];
     }
 }

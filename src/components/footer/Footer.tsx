@@ -4,26 +4,17 @@ import Soc1als from "../hero/Soc1als";
 export const Footer = () => {
   return (
     <footer className="wrapper footer">
-      <div className="flex flex-col justify-center items-center gap-10 md:gap-20">
-        <div className="flex flex-col gap-3">
-          <p className="text-center text-accent text-xl md:text-3xl">
-            Get in Touch With Me
-          </p>
-          <a
-            className="text-center text-2xl md:text-5xl"
-            href="mailto:margo250494@gmail.com"
-          >
+      <div className="footer__container">
+        <div className="footer__main">
+          <p className="footer__main-intro">Get in Touch With Me</p>
+          <a className="footer__main-mail" href="mailto:margo250494@gmail.com">
             margo250494@gmail.com
           </a>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 gap-x-0 lg:gap-x-50">
-          <div className="">
-            <a href="/" className="flex items-center gap-2">
-              <img
-                className="h-[40px] w-[40px] rounded-full"
-                src={logo}
-                alt="Margarita - Frontend Developer Logo"
-              />
+        <div className="footer__links">
+          <div>
+            <a href="/" className="footer__links-logo">
+              <img src={logo} alt="Margarita - Frontend Developer Logo" />
               <p className="p-0">
                 Margarita
                 <span className="sr-only md:not-sr-only">

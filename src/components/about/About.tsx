@@ -11,13 +11,10 @@ export const About = () => {
         <p className="about__intro">Introduction</p>
         <h2 className="about__title">Overview.</h2>
       </motion.div>
-      <motion.p
-        className="mt-4 text-secondary text-[1.063rem] max-w-4xl leading-[1.875rem] font-light"
-        variants={fadeIn("", "", 0.1, 1)}
-      >
+      <motion.p className="about__info" variants={fadeIn("", "", 0.1, 1)}>
         {about}
       </motion.p>
-      <div className="mt-10 flex flex-wrap gap-10 items-stretch">
+      <div className="about__card">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
