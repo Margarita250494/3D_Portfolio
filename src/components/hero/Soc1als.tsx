@@ -3,7 +3,7 @@ import { heroInfo } from "./data";
 const Soc1als = () => {
   const socialLinks = heroInfo.find((info) => "soc1als" in info)?.soc1als || [];
   return (
-    <div className="hero__soc1als">
+    <div className="hero__soc1als soc1als">
       {socialLinks.map((social, index) => (
         <a
           key={index}

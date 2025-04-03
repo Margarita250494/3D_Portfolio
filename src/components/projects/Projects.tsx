@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { projects } from "./data";
 import { Swiper, SwiperSlide } from "swiper/react";
+// @ts-ignore
 import "swiper/css";
 import { Swiper as SwiperType } from "swiper";
 import { MoveUpRight, Github } from "lucide-react";
@@ -18,9 +19,7 @@ export const Projects = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper: SwiperType) => {
-    //get current slide index
     const currentIndex = swiper.activeIndex;
-    //update project based on current slide index
     setProject(projects[currentIndex]);
   };
   return (

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { logo } from "../../assets";
 
 type Props = {
-  setIsScrolled: (value: boolean) => void;
+  setIsScrolled?: (value: boolean) => void;
 };
 
 export const Logo = ({ setIsScrolled }: Props) => {

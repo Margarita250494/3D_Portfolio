@@ -10,8 +10,9 @@ import { ComputersCanvas } from "./3d-models/Computers";
 import { Earth } from "./3d-models/Earth";
 import { Footer } from "./footer/Footer";
 import { Logo } from "./header/Logo";
+import { Loader } from './Loader';
 
 
 
 
-export {Header, About, Hero, Contact,Experience,Projects,BallCanvas,ComputersCanvas,Earth,Footer,Logo};
+export {Header, About, Hero, Contact,Experience,Projects,BallCanvas,ComputersCanvas,Earth,Footer,Logo,Loader};

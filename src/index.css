@@ -8,9 +8,9 @@
 @import './styles/experience.css';
 @import './styles/projects.css';
 @import './styles/contact.css';
+@import './styles/footer.css';
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme inline {
 
@@ -203,6 +203,14 @@ main{
   display: flex;
   flex-direction: column;
   gap: 100px;
+}
+
+.soc1als{
+  @apply flex items-center gap-4;
+
+  svg{
+    @apply text-white hover:text-hover duration-300;
+  }
 }
 
 .wrapper{

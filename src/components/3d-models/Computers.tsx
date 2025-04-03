@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
+import { Loader } from "../Loader";
 
 type Props = {
   isMobile: boolean;
@@ -64,7 +65,7 @@ export const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       style={{ height: isMobile ? "25rem" : "40rem" }}
     >
-      <Suspense>
+      <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}

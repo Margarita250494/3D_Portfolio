@@ -7,6 +7,7 @@ import {
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { Loader } from "../Loader";
 
 interface BallProps {
   imgUrl: string;
@@ -43,7 +44,7 @@ interface BallCanvasProps {
 export const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
-      <Suspense>
+      <Suspense fallback={<Loader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
