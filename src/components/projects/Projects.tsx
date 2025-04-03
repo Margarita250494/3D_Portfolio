@@ -107,30 +107,30 @@ export const Projects = () => {
             </div>
           </div>
           {/*right part */}
-          <div className="lg:max-w-[60%] h-fit bg-white rounded-[1.25rem]">
+          <div className="lg:max-w-[60%] h-fit rounded-[1.25rem]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
               onSlideChange={handleSlideChange}
-              className=" violet-gradient rounded-[1.25rem] shadow-card"
+              className="rounded-[1.25rem] shadow-card"
             >
               {projects.map((project) => (
                 <SwiperSlide key={project.title}>
-                  <div className="h-auto relative group flex justify-center items-center bg-tertiary">
+                  <div className="h-auto relative group flex justify-center items-center bg-transparent">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                   </div>
-                  <div className="relative w-full h-full">
+                  <div className="relative w-full h-full flex justify-center items-center">
                     <img
                       src={project.image}
                       alt=""
-                      className="object-cover aspect-[16/9]"
+                      className="object-contain"
                     />
                   </div>
                 </SwiperSlide>
               ))}
               {/* slider buttons */}
               <div className="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none">
-                <WorkSliderBtns btnStyles="bg-tertiary/70 hover:bg-secondary/60 text-white w-[2rem] h-[2rem] flex justify-center items-center duration-300 rounded-xl" />
+                <WorkSliderBtns btnStyles="bg-accent/20 hover:bg-secondary/60 text-white w-[2rem] h-[2rem] flex justify-center items-center duration-300 rounded-xl" />
               </div>
             </Swiper>
           </div>

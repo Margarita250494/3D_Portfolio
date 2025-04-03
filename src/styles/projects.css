@@ -1,3 +1,5 @@
 .projects{
     @apply flex flex-col justify-center max-w-[90vw] gap-15;
+
+    
 }

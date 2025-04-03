@@ -1,4 +1,4 @@
-import { arrowGame, fitnessApp,futureTech,cakeArt,management } from "@/assets"
+import { arrowGame, fitnessApp,futureTech,management,cakeArt } from "@/assets"
 import { Project } from "@/utils/types"
 
 export const projects:Project[] = [
