@@ -12,7 +12,7 @@ const Soc1als = () => {
           target="_blank"
           className="soc1al-link"
         >
-          <social.icon strokeWidth={1} />
+          <social.icon strokeWidth={1} color="white" />
         </a>
       ))}
     </div>

@@ -109,3 +109,18 @@ export type FormState = {
   success?: boolean;
   message?: string;
 };
+
+interface TechStack {
+  name: string;
+}
+
+export interface Project {
+  num: string;
+  category: string;
+  title: string;
+  description: string;
+  stack: TechStack[];
+  image: string;
+  live: string;
+  github: string;
+}

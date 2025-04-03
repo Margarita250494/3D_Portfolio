@@ -1,5 +1,5 @@
 .contact{
-    @apply relative z-0;
+    @apply relative z-0 max-w-[90vw];
 
     .contact__form{
         @apply lg:mt-12 lg:flex-row flex-col-reverse flex gap-10 overflow-hidden;

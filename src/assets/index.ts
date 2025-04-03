@@ -17,6 +17,13 @@ import typescript from './tech/typescript.png';
 import htw from './company/htw.svg';
 import globalCT from './company/global-ct-logo-small.png';
 
+import arrowGame from './works/arrow-game.png';
+import cakeArt from './works/cake-art.png';
+import fitnessApp from './works/fitness-app.png';
+import futureTech from './works/future-tech.png';
+import management from './works/project-manegemnet.png';
 
-export {logo,web,css,figma,html,javascript,postgresql,postman,reactjs,redux,sass,tailwind,threejs,typescript,htw,globalCT};
+
+
+export {logo,web,css,figma,html,javascript,postgresql,postman,reactjs,redux,sass,tailwind,threejs,typescript,htw,globalCT, arrowGame,cakeArt,fitnessApp,futureTech,management};
 
