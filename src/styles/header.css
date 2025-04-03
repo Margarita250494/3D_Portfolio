@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.header{
+    @apply flex flex-col gap-10 w-full;
+
+    .header__container{
+        @apply  w-full flex items-center fixed top-0 z-20 ;
+
+        .header__inner{
+            @apply w-full flex justify-between items-center max-w-[90rem] mx-auto;
+
+            .header__logo{
+                @apply flex items-center gap-4 hover:blur-[1.5px] duration-300;
+
+                .logo{
+                    @apply w-9 h-9 object-contain rounded-full;
+                }
+
+                .header__logo-text{
+                    @apply text-white text-[1rem] font-bold cursor-pointer text-nowrap;
+                }
+            }
+
+            .header__menu{
+                .header__menu-list{
+                    .header__menu-item{
+                        @apply text-secondary hover:text-white text-[1rem] font-medium duration-300 cursor-pointer;
+    
+                        a.active{
+                            @apply text-white;
+                        }
+                    }
+                }
+                .mobile{
+                    @apply flex flex-col justify-end items-start gap-5;
+                }
+                .desctop{
+                    @apply hidden md:flex flex-row gap-10;
+                }
+            }
+
+            .header__mobile{
+                @apply md:hidden flex flex-1 justify-end items-center;
+    
+                .header__button{
+                    @apply w-[2rem] h-[2rem] cursor-pointer;
+                }
+    
+                .header__mobile-menu{
+                    @apply p-6 absolute top-20 right-0 mx-4 my-2 min-w-[9rem] z-10 rounded-xl;
+                }
+            }
+        }
+        
+        
+    }
+
+    .scrolled{
+        @apply bg-primary/20 backdrop-blur-md shadow-md;
+    }
+
+}
+
